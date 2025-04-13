@@ -9,7 +9,7 @@ import argparse
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Transform your horizontal video to vertical video')
     parser.add_argument('input_video', help='Path to input video file or Live UDP URL')
-    parser.add_argument('--model_type', type=str, default=Config.MODEL_PARAMS["MODEL_TYPE_YOLO"], help='Select the Model for person detection YOLO/AWS')
+    parser.add_argument('--model_type', type=str, default=Config.MODEL_PARAMS["MODEL_TYPE_YOLO"], help='Select the Model for person detection YOLO')
     parser.add_argument('--model_verbose', type=str, default=Config.MODEL_PARAMS["MODEL_VERBOSE"], help='Enable verbose mode for the YOLO model')
     parser.add_argument('--mode', type=bool, default=Config.OUTPUT_VIDEO_PARAMS["VERTICAL"],help='Path to output video file')
     parser.add_argument('--output', type=str, default=None,help='Path to output video file')
