@@ -42,9 +42,7 @@ This solution offers multiple installation methods. Please review the detailed s
 
 ```markdown
 1. Source Installation
-2. Python Local Package Installation
-3. Conda Environment Installation
-4. Docker Container Installation
+2. Conda Environment Installation
 ```
 
 ### 1. Source Installation
