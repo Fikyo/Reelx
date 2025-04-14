@@ -83,8 +83,6 @@ python reelx.py -h
 5. The command will display all available options for converting horizontal video to vertical video format.
 
 ```markdown
-## Sample Output
-
 usage: reframer [-h] [--model_type MODEL_TYPE] [--model_verbose MODEL_VERBOSE] [--mode MODE]
                    [--output OUTPUT] [--confidence CONFIDENCE] [--smoothing SMOOTHING]
                    [--preview_vertical_video PREVIEW_VERTICAL_VIDEO]
