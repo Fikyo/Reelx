@@ -1,5 +1,5 @@
-# Reelix
-Reelix is an innovative video processing tool designed to convert horizontal videos into multiple variants of vertical videos, optimizing the viewing experience for various platforms and audiences.
+# Reelx
+Reelx is an innovative video processing tool designed to convert horizontal videos into multiple variants of vertical videos, optimizing the viewing experience for various platforms and audiences.
 
 # Background
 * **The Rise of Vertical Video Content on Smartphones** - In recent years, vertical videos have surged in popularity, primarily driven by the widespread use of smartphones. 
@@ -62,11 +62,11 @@ python --version
 1. Clone the **Reelix** source repository usign below command
 
 ```
-git clone https://github.com/Fikyo/Reelix
+git clone https://github.com/Fikyo/Reelx
 
 ```
 
-2. Traverse to the directory `reelix/src` using command `cd reelix/src`
+2. Traverse to the directory `src` using command `cd src`
 
 3. install all required packages
 
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 4. execute the command below to check if the installation is successful.
 
 ```
-python reelix.py -h
+python reelx.py -h
 ```
 
 5. The command will display all available options for converting horizontal video to vertical video format.
@@ -92,9 +92,6 @@ usage: reframer [-h] [--model_type MODEL_TYPE] [--model_verbose MODEL_VERBOSE] [
                    [--enable_tiled_frame ENABLE_TILED_FRAME] [--person_model PERSON_MODEL]
                    [--process_noloss_frame PROCESS_NOLOSS_FRAME]
                    [--noloss_tiled_position NOLOSS_TILED_POSITION]
-                   [--fill_using_genaiimg FILL_USING_GENAIIMG]
-                   [--fill_using_genaitext FILL_USING_GENAITEXT]
-                   [--fill_using_genaivid FILL_USING_GENAIVID]
                    input_video
 ```
 
