@@ -1,0 +1,8 @@
+
+opencv-python==4.10.0.84
+torch==2.4.1
+ultralytics==8.3.9
+ffmpeg-python==0.2.0
+uuid==1.30
+imutils==0.5.4
+moviepy==2.1.2
