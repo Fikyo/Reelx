@@ -1,14 +1,8 @@
-# ABC stands for Abstract Base Class. It's used to define abstract classes in Python.
-# An abstract class is a class that contains one or more abstract methods (methods without implementation).
-# Abstract classes cannot be instantiated directly - they must be subclassed and their abstract methods implemented.
-# In this case, PersonDetector is an abstract base class that defines the interface for person detection,
-# requiring all subclasses to implement the detect_person() method.
 from abc import ABC, abstractmethod
 from reelx.config.configuration import Config
 from reelx.utils.device import Device
 from ultralytics import YOLO
 from pkg_resources import resource_filename
-import boto3
 import os
 import cv2
 
@@ -84,48 +78,14 @@ class YoloDetector(PersonDetector):
        
         return track_results
 
-class RekognitionDetector(PersonDetector):
-    def __init__(self):
-        self.client = boto3.client('rekognition')
-    
-    def detect_persons(self, frame):
-        # Convert downscaled frame to bytes for Rekognition
-        _, img_encoded = cv2.imencode('.jpg', frame)
-        img_bytes = img_encoded.tobytes()
-
-        response = self.client.detect_labels(
-            Image={'Bytes': img_bytes},
-            MinConfidence=Config.MODEL_PARAMS["OBJECT_CONFIDENCE_THRESHOLD"]
-        )
-        person_boxes = []
-        
-        # Extract person detections and bounding boxes
-        for label in response['Labels']:
-            if label['Name'] == 'Person':
-                for instance in label['Instances']:
-                    bbox = instance['BoundingBox']
-                    confidence = instance['Confidence']
-                    
-                    # Convert relative coordinates to absolute pixel values and scale back up
-                    height, width = frame.shape[:2]
-                    x1 = int(bbox['Left'] * width)
-                    y1 = int(bbox['Top'] * height)
-                    x2 = int((bbox['Left'] + bbox['Width']) * width) 
-                    y2 = int((bbox['Top'] + bbox['Height']) * height)
-                    
-                    person_boxes.append([x1, y1, x2, y2, confidence])
-        return person_boxes, response
-
 class DetectorFactory:
     @staticmethod
     def get_detector(detector_type: str) -> PersonDetector:
         print(f"Detector type: {detector_type}")
         if detector_type.lower() == Config.MODEL_PARAMS["MODEL_TYPE_YOLO"].lower():
             return YoloDetector()
-        elif detector_type.lower() == Config.MODEL_PARAMS["MODEL_TYPE_AWS"].lower():
-            return RekognitionDetector()
         else:
-            raise ValueError("Invalid detector type. Use 'yolo' or 'rekognition'")
+            raise ValueError("Invalid detector type. Use 'yolo'")
 
 # Face Detection Classes
 class FaceDetector(ABC):
@@ -172,52 +132,11 @@ class YoloFaceDetector(FaceDetector):
         results = self.model.predict(source=frame[py1:py2, px1:px2], conf=Config.MODEL_PARAMS["FACE_CONFIDENCE_THRESHOLD"], verbose=False) 
         return results
 
-class RekognitionFaceDetector(FaceDetector):
-    def __init__(self):
-        self.client = boto3.client('rekognition')
-    
-    def detect_faces(self, frame, master_box):
-        # Convert downscaled frame to bytes for Rekognition
-        _, img_encoded = cv2.imencode('.jpg', frame)
-        img_bytes = img_encoded.tobytes()
-
-        try:
-            # Call Rekognition DetectLabels
-            response = self.client.detect_labels(
-                Image={'Bytes': img_bytes}
-            )
-
-            bounding_boxes = []
-            
-            # Extract person detections and bounding boxes
-            for label in response['Labels']:
-                if label['Name'] == 'Person':
-                    for instance in label['Instances']:
-                        bbox = instance['BoundingBox']
-                        confidence = instance['Confidence']
-                        
-                        # Convert relative coordinates to absolute pixel values and scale back up
-                        height, width = frame.shape[:2]
-                        x1 = int(bbox['Left'] * width)
-                        y1 = int(bbox['Top'] * height)
-                        x2 = int((bbox['Left'] + bbox['Width']) * width) 
-                        y2 = int((bbox['Top'] + bbox['Height']) * height)
-                        
-                        bounding_boxes.append([x1, y1, x2, y2, confidence])
-
-            return bounding_boxes 
-
-        except Exception as e:
-            print(f"Error calling Rekognition: {str(e)}")
-            return []
-
 class FaceDetectorFactory:
     @staticmethod
     def get_detector(detector_type: str) -> FaceDetector:
         print(f"Face Detector type: {detector_type}")
         if detector_type.lower() == Config.MODEL_PARAMS["MODEL_TYPE_YOLO"].lower():
             return YoloFaceDetector()
-        elif detector_type.lower() == Config.MODEL_PARAMS["MODEL_TYPE_AWS"].lower():
-            return RekognitionFaceDetector()
         else:
-            raise ValueError("Invalid detector type. Use 'yolo' or 'rekognition'")
+            raise ValueError("Invalid detector type. Use 'yolo'")
