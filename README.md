@@ -63,7 +63,6 @@ python --version
 
 ```
 git clone https://github.com/Fikyo/Reelx
-
 ```
 
 2. Traverse to the directory `src` using command `cd src`
