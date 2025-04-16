@@ -65,7 +65,7 @@ python --version
 
 #### Installation Instructions
 
-1. Clone the **Reelix** source repository usign below command
+1. Clone the **Reelx** source repository usign below command
 
 ```
 git clone https://github.com/Fikyo/Reelx
