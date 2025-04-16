@@ -1,38 +1,44 @@
-# Reelx
-Reelx is an innovative video processing tool designed to convert horizontal videos into multiple variants of vertical videos, optimizing the viewing experience for various platforms and audiences.
+# Reelx  
 
-# Background
-* **The Rise of Vertical Video Content on Smartphones** - In recent years, vertical videos have surged in popularity, primarily driven by the widespread use of smartphones. 
+Reelx is an advanced video editing tool that revolutionizes the transformation of horizontal videos into vertical formats. Designed to cater to the growing demand for vertical content, Reelx ensures videos are optimized for diverse platforms and audiences while maintaining high visual quality and engagement.
 
-* **Engagement and User Experience** - Users prefer consuming content in a format that fits their device's natural orientation, making vertical videos more engaging and convenient.
+## Background  
 
-* **Many social media favoring Vertical video** - Giving Vertical video  higher visibility and reach. This has encouraged content creators to produce more vertical content to maximize their engagement and growth on these platforms.
+- **The Rise of Vertical Video Content on Smartphones**  
+  Vertical videos have become a dominant format, driven by the natural orientation of smartphones and their growing popularity on social media platforms.  
 
-## Unique Features:
+- **Enhanced Engagement and Usability**  
+  Vertical videos provide a seamless viewing experience by aligning with user preferences for device-friendly content.  
 
-### AI-Driven Region of Interest (ROI) Adjustment:
+- **Social Media Preference for Vertical Content**  
+  Many platforms prioritize vertical videos, granting them greater visibility and reach. This trend incentivizes creators to adapt to the format to expand their audience and engagement.  
 
-Utilizes advanced artificial intelligence to identify and adjust the region of interest within the video. This ensures that the most important elements are centered and prominent in the vertical format, enhancing viewer engagement.
+## Unique Features  
 
-![Reframer Demo](misc/ai-roi.gif)
+### AI-Driven Region of Interest (ROI) Adjustment  
+Reelx leverages cutting-edge artificial intelligence to detect and adapt the region of interest in videos. This ensures that key visual elements remain the focal point, enhancing viewer impact and retention.  
 
-### Dynamic People Tracking:
+![Reframer Demo](misc/ai-roi.gif)  
 
-Implements sophisticated people tracking algorithms to dynamically adjust the region of interest based on the movement of individuals within the video. This maintains focus on key subjects, ensuring they remain the center of attention.
+### Dynamic People Tracking  
+This feature employs sophisticated algorithms to track movement and adjust focus dynamically. It ensures that individuals remain centered and prominent, even during high-motion sequences.  
 
-![People Tracking](misc/pple_tracking.gif)
+![People Tracking](misc/pple_tracking.gif)  
 
-### Tiled View for Podcast Videos:
+### Tiled View for Podcast Videos  
+Reelx provides a customized tiled layout for podcast videos, enabling simultaneous visibility of multiple speakers. Intelligent transitions highlight the active speaker, offering a polished and professional viewing experience.  
 
-Creates a tiled view layout specifically designed for podcast videos, allowing multiple speakers or participants to be visible simultaneously. The layout intelligently switches to highlight the active speaker, providing a seamless viewing experience.
+![Tiled view](misc/tiled_view.gif)  
 
-![Tiled view](misc/tiled_view.gif)
+### No-Loss Frame with Zoomed View  
+The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design. Users can reposition frames to emphasize essential content, ensuring critical elements are consistently visible and engaging.  
 
-### No-Loss Frame with Zoomed View:
+![No loss frame multi position](misc/noloss_view.gif)  
 
-Generates a no-loss frame with a zoomed-in view presented in a tiled fashion. Users have the flexibility to customize the position of the no-loss frame, ensuring that critical content is never missed and can be highlighted as needed.
+### Custom Tracking Using ClassID  
+Reelx introduces custom tracking capabilities that allow users to generate vertical videos focused on specific objects or areas of interest. By providing a `classID` corresponding to the target object, Reelx dynamically tracks and centers the video around the selected focus object, ensuring tailored and precise framing.  
 
-![No loss frame multi position](misc/noloss_view.gif)
+![Custom Tracking](misc/classid.gif) 
 
 ## Getting started
 
