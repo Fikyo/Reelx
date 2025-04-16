@@ -88,7 +88,7 @@ python reelx.py -h
 5. The command will display all available options for converting horizontal video to vertical video format.
 
 ```markdown
-usage: reframer [-h] [--model_type MODEL_TYPE] [--model_verbose MODEL_VERBOSE] [--mode MODE]
+usage: reelx [-h] [--model_type MODEL_TYPE] [--model_verbose MODEL_VERBOSE] [--mode MODE]
                    [--output OUTPUT] [--confidence CONFIDENCE] [--smoothing SMOOTHING]
                    [--preview_vertical_video PREVIEW_VERTICAL_VIDEO]
                    [--preview_debug_player PREVIEW_DEBUG_PLAYER]
@@ -109,13 +109,13 @@ usage: reframer [-h] [--model_type MODEL_TYPE] [--model_verbose MODEL_VERBOSE] [
 1. Create Conda environment for python 3.12.6 using below ommand
 
 ```
-conda create -n reelix python=3.12.6
+conda create -n reelx python=3.12.6
 ```
 
-2. Activate the conda environment `reelix`
+2. Activate the conda environment `reelx`
 
 ```
-conda activate reelix
+conda activate reelx
 ```
 
 3. Follow the either of [#1](#1-source-installation) installation methods.
