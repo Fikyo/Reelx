@@ -85,11 +85,6 @@ class Config:
         "FONT": cv2.FONT_HERSHEY_SIMPLEX
     }
 
-    S3_PARAMS = {
-        "BUCKET_NAME": "mahesh-media",
-        "REGION_NAME": "us-east-1",
-    }
-
     @classmethod
     def load_config(cls, config_file):
         """Load configuration from JSON file"""
