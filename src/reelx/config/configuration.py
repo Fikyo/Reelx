@@ -24,7 +24,6 @@ class Config:
         "PREVIEW_VERTICAL_VIDEO": False,
         "PREVIEW_DEBUG_PLAYER": False,
         "OUTPUT_FILE": None,
-        "FILL_USING_GENAI": False,
     }
 
     CROP_PLACEMENT_PARAMS = {
@@ -36,7 +35,6 @@ class Config:
     
     # Model Parameters
     MODEL_PARAMS = {
-        "MODEL_TYPE_AWS": "REKOGNITION",
         "MODEL_TYPE_YOLO": "YOLO",
         "OBJECT_CONFIDENCE_THRESHOLD": 0.8,
         "FACE_CONFIDENCE_THRESHOLD": 0.5,
@@ -45,7 +43,6 @@ class Config:
         "FACE_MODEL_URL": "https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11n-face.pt",
         "MODEL_VERBOSE": False,
         "CURRENT_MODEL_TYPE": "YOLO",
-        "VIDEO_MODEL": "amazon.nova-reel-v1:0",
         "POSE_MODEL_PATH": "./model_static/yolo11n-pose.pt"
     }
 
