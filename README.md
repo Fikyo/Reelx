@@ -44,7 +44,7 @@ Reelx introduces custom tracking capabilities that allow users to generate verti
 
 ## Installation
 
-This solution offers multiple installation methods. Please review the detailed steps below and choose the installation approach that best suits your needs.
+This methods of installation are as follows:
 
 ```markdown
 1. Source Installation
