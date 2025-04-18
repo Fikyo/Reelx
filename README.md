@@ -33,7 +33,7 @@ Reelx provides a customized tiled layout for podcast videos, enabling simultaneo
 ### No-Loss Frame with Zoomed View  
 The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design.
 
-![No loss frame multi position](misc/noloss_view.gif)  
+![No loss frame multi position](misc/noloss.gif)  
 
 ### Custom Tracking Using ClassID  
 Reelx introduces custom tracking capabilities that allow users to generate vertical videos focused on specific objects or areas of interest. By providing a `classID` corresponding to the target object, Reelx dynamically tracks and centers the video around the selected focus object, ensuring tailored and precise framing.  
