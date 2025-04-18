@@ -5,7 +5,6 @@ import time
 from reelx.config.configuration import Config
 from reelx.model.model_control import DetectorFactory, FaceDetectorFactory
 from reelx.utils.viualisation import Visualizer
-from reelx.processors.graphics_processor import GraphicsProcessor
 from reelx.utils.printer import Printer
 from reelx.processors.frame_comparison import FrameComparison
 from reelx.processors.box_processor import BoxProcessor
@@ -33,7 +32,6 @@ class FrameProcessor:
         self.visualizer = Visualizer(Config.OUTPUT_VIDEO_PARAMS["PREVIEW_DEBUG_PLAYER"], 
                                    Config.OUTPUT_VIDEO_PARAMS["PREVIEW_VERTICAL_VIDEO"])
         self.printer = Printer()
-        self.graphics_processor = GraphicsProcessor()
         self.frame_comparison = FrameComparison()
         self.box_processor = BoxProcessor()
         self.frame_composition = FrameComposition(target_height, target_width)
