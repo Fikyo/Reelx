@@ -28,17 +28,17 @@ This feature employs sophisticated algorithms to track movement and adjust focus
 ### Tiled View for two person vertical video   
 Reelx provides a customized tiled layout for podcast videos, enabling simultaneous visibility of multiple speakers. Intelligent transitions highlight the active speaker, offering a polished and professional viewing experience.  
 
-![Tiled view](misc/tiled_view.gif)  
-
-### Zoomed View with No Frame Loss 
-The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design.
-
-![No loss frame multi position](misc/no_loss.gif)  
+![Tiled view](misc/tiled_view.gif)
 
 ### Custom Tracking Using ClassID  
 Reelx introduces custom tracking capabilities that allow users to generate vertical videos focused on specific objects or areas of interest. By providing a `classID` corresponding to the target object, Reelx dynamically tracks and centers the video around the selected focus object, ensuring tailored and precise framing.  
 
 ![Custom Tracking](misc/classid.gif) 
+
+### Zoomed View with No Frame Loss 
+The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design.
+
+![No loss frame multi position](misc/no_loss.gif)  
 
 ## Getting started
 
