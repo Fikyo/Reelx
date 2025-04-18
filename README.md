@@ -2,35 +2,35 @@
 
 Reelx is an advanced video editing tool that revolutionizes the transformation of horizontal videos into vertical formats. Designed to cater to the growing demand for vertical content, Reelx ensures videos are optimized for diverse platforms and audiences while maintaining high visual quality and engagement.
 
-## Background  
+## Why Vertical Videos Matter?  
 
-- **The Rise of Vertical Video Content on Smartphones**  
+- **The Surge in Vertical Video Content**  
   Vertical videos have become a dominant format, driven by the natural orientation of smartphones and their growing popularity on social media platforms.  
 
-- **Enhanced Engagement and Usability**  
+- **Optimized Engagement and Accessibility**  
   Vertical videos provide a seamless viewing experience by aligning with user preferences for device-friendly content.  
 
-- **Social Media Preference for Vertical Content**  
+- **Platform Preference for Vertical Formats**  
   Many platforms prioritize vertical videos, granting them greater visibility and reach. This trend incentivizes creators to adapt to the format to expand their audience and engagement.  
 
 ## Unique Features  
 
-### AI-Driven Region of Interest (ROI) Adjustment  
+### AI-Driven Region of Interest Adjustment  
 Reelx leverages cutting-edge artificial intelligence to detect and adapt the region of interest in videos. This ensures that key visual elements remain the focal point, enhancing viewer impact and retention.  
 
 ![Reframer Demo](misc/ai-roi.gif)  
 
-### Dynamic People Tracking  
+### Dynamic Motion and Subject Tracking 
 This feature employs sophisticated algorithms to track movement and adjust focus dynamically. It ensures that individuals remain centered and prominent, even during high-motion sequences.  
 
 ![People Tracking](misc/pple_tracking.gif)  
 
-### Tiled View for Podcast Videos  
+### Tiled View for two person vertical video   
 Reelx provides a customized tiled layout for podcast videos, enabling simultaneous visibility of multiple speakers. Intelligent transitions highlight the active speaker, offering a polished and professional viewing experience.  
 
 ![Tiled view](misc/tiled_view.gif)  
 
-### No-Loss Frame with Zoomed View  
+### Zoomed View with No Frame Loss 
 The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design.
 
 ![No loss frame multi position](misc/no_loss.gif)  
