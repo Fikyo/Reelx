@@ -31,7 +31,7 @@ Reelx provides a customized tiled layout for podcast videos, enabling simultaneo
 ![Tiled view](misc/tiled_view.gif)  
 
 ### No-Loss Frame with Zoomed View  
-The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design. Users can reposition frames to emphasize essential content, ensuring critical elements are consistently visible and engaging.  
+The tool enables a zoomed-in, no-loss frame layout presented in a flexible tiled design.
 
 ![No loss frame multi position](misc/noloss_view.gif)  
 
